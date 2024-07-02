@@ -1,0 +1,17 @@
+.btn-ghost:hover{
+    border: none;
+    border-radius: 20%;
+    background-color: transparent;
+    box-shadow: blue 0px 0px 10px ;
+    outline: none;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-ghost{
+    outline: none;
+}
+.navbar{
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+}
