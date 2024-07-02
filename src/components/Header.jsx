@@ -55,10 +55,10 @@ function Header() {
               className="menu menu-sm dropdown-content bg-gray-800 rounded-box z-[1] mt-3 w-52 p-2 shadow flex flex-col justify-center items-center"
             >
               <li>
-                <Link to='/'>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to='/about'>About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <a href="/contact">Contact</a>
@@ -74,9 +74,15 @@ function Header() {
           <a className="text-xl md:pl-8 ">Ed-Tech</a>
         </div>
         <div className="navbar-end gap-5 hidden md:flex">
-          <Link to='/' className="btn btn-ghost ">Home</Link>
-            <Link to='/about' className="btn btn-ghost ">About</Link>
-          <Link to='/contact' className="btn btn-ghost ">Contact us</Link>
+          <Link to="/" className="btn btn-ghost ">
+            Home
+          </Link>
+          <Link to="/about" className="btn btn-ghost ">
+            About
+          </Link>
+          <Link to="/contact" className="btn btn-ghost ">
+            Contact us
+          </Link>
           <a href="/login" className="btn btn-ghost">
             Login
           </a>

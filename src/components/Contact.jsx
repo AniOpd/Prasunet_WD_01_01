@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add form submission logic here
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
   };
 
   return (
@@ -19,7 +19,10 @@ const Contact = () => {
         <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="name"
+            >
               Name
             </label>
             <input
@@ -32,7 +35,10 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -45,7 +51,10 @@ const Contact = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="message"
+            >
               Message
             </label>
             <textarea
@@ -69,10 +78,19 @@ const Contact = () => {
       </div>
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4">Company Details</h2>
-        <p className="text-lg mb-2"><strong>Address:</strong> 123 EdTech St, Learning City, Education Country</p>
-        <p className="text-lg mb-2"><strong>Email:</strong> info@edtech.com</p>
-        <p className="text-lg mb-2"><strong>Phone:</strong> (123) 456-7890</p>
-        <p className="text-lg mb-2"><strong>Working Hours:</strong> Mon-Fri, 9AM - 6PM</p>
+        <p className="text-lg mb-2">
+          <strong>Address:</strong> 123 EdTech St, Learning City, Education
+          Country
+        </p>
+        <p className="text-lg mb-2">
+          <strong>Email:</strong> info@edtech.com
+        </p>
+        <p className="text-lg mb-2">
+          <strong>Phone:</strong> (123) 456-7890
+        </p>
+        <p className="text-lg mb-2">
+          <strong>Working Hours:</strong> Mon-Fri, 9AM - 6PM
+        </p>
       </div>
     </div>
   );
