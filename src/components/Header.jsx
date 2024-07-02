@@ -83,12 +83,12 @@ function Header() {
           <Link to="/contact" className="btn btn-ghost ">
             Contact us
           </Link>
-          <a href="/login" className="btn btn-ghost">
+          <Link to="/login" className="btn btn-ghost">
             Login
-          </a>
-          <a href="/register" className="btn btn-ghost">
+          </Link>
+          <Link to="/register" className="btn btn-ghost">
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </>
